@@ -12,7 +12,7 @@
              <li data-filter="*" class="filter-active">All dishes</li>
               {% for item in categories %}
 
-              <li data-filter=".filter-{{ item.id }}">{{ item.name }}</li>
+              <li data-filter = ".filter-{{ item.id }}" > {{ item.name }}</li>
 
                 {% endfor %}
             </ul>
@@ -25,10 +25,10 @@
 
           <div class="col-lg-6 menu-item filter-{{ dish.category.id }}">
             <div class="menu-content">
-              <a href="#">{{ dish.name}}</a><span>{{dish.price}}</span>
+              <a href="#">{{ dish.name }}</a><span>{{ dish.price }}</span>
             </div>
             <div class="menu-ingredients">
-                {{ dish.ingredients}}
+                {{ dish.ingredients }}
             </div>
           </div>
         {% endfor %}
